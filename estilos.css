@@ -1,0 +1,378 @@
+
+
+/* Estilos generales de la página */
+
+* 
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body 
+{
+  background: #fefefe;
+  font-family: sans-serif;
+}
+
+
+
+/* Estilos para la clase heading */
+
+.heading 
+{
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+
+/* Estilos para el bloque #1  "Tarjetas cards" */
+
+.row 
+{
+  padding-left: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  padding-left: 12%;
+  /*background: blue;*/
+}
+
+.container-card
+{
+	margin-bottom: 0;
+	width: 250%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+
+}
+
+.card {
+  width: 21%;
+  height: 178px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+  margin: 3px 3px;
+  transition: 0.3s;
+}
+
+.card-header {
+  border-radius: 15px;
+  height: 33px;
+  margin-top: -15%;
+  text-align: center;
+  padding: 50px 10px;
+  color: #fff;
+}
+
+.card-body {
+  margin-top: 15%;
+  padding: 22px 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+
+
+/* Estilos para el bloque #2  "Video e Información" */
+
+
+.cardbloquedos {
+  width: 40%;
+  height: 378px;
+  padding-left: 0%;
+  border-radius: 15px;
+  /*background-color: red;*/
+  margin: 0px 20px;
+  transition: 0.3s;
+}
+
+
+
+.cardbloquedos-body {
+  padding-left: 1%;
+  font-size: 12px;
+}
+
+.cardbloquedos-bodyinfo {
+  padding-left: 10%;
+  
+}
+
+
+
+
+/* Estilos para la información de lado derecho */
+
+.listas
+{
+
+  width: 100%;
+  list-style-type: none;
+}
+
+.listas p
+{
+  width: 150%;
+  padding-left: 25px;
+  font-family: arial;
+  font-size: 12px;
+}
+
+ i
+ {
+
+  margin-top: 2%;
+  background: blue;
+  border-radius: 50%;
+  color:#80FF00;
+  font-size: 20px;
+  width: 22px;
+  
+}
+
+
+/* Estilos para bloque tres "Pasos" */
+
+.cardbloquetres
+{
+
+    display: flex;
+    text-align: center;
+    flex-flow: wrap;
+    margin-top: 5%;
+    width: 87%;
+    background-color: #013ADF;
+    height: 225%;
+
+    
+}
+
+
+
+/* Estilos para footer */
+
+
+.footer
+{
+
+    display: flex;
+    text-align: center;
+    flex-flow: wrap;
+    margin-top: 5%;
+    width: 87%;
+    /*background-color: #013ADF;*/
+    height: 225%;
+
+    
+}
+
+.card-footer {
+  
+  width: 32%;
+  height: 10%;
+  padding: 2%;
+
+}
+
+
+.footer p
+{
+	text-align: center;
+	padding-left: 25%;
+}
+
+
+.container-card-boton{
+  margin-top: 15%;
+  margin-bottom: ;
+  width: 1650px;
+  display: flex;
+  max-width: 1100px;
+  margin: auto;
+  padding: 2%;
+
+}
+
+.card-boton{
+  width: 80%;
+  height: 15%;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+.btn_info{
+
+  width: 205%;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 50px;
+  border: 1px solid;
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: 500;
+  transition: background-color .3s;
+}
+
+.btn_modal
+{ 
+  width: 185%;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 50px;
+  border: 1px solid;
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: 500;
+  transition: background-color .3s;
+}
+
+
+
+
+
+/* Diseño Responsive */
+
+.card:hover 
+{
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1000px) 
+{
+  .card {
+    width: 40%;
+  }
+
+  
+}
+
+@media screen and (max-width: 800px) 
+{
+  .container 
+  {
+    width: 100%;
+
+  }
+
+  .heading 
+  {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .card 
+  {
+    width: 80%;
+  }
+
+  .cardbloquedos 
+  {
+
+    width: 100%;
+  }
+
+  iframe
+  {
+  	
+  	align-items: center;
+	font-size: 12px;
+    width: 80%;
+  }
+ 
+  .footer 
+  {
+
+    width: 100%;
+  }
+  
+}
+
+
+
+@media screen and (max-width: 600px) 
+{
+  .container 
+  {
+    width: 100%;
+
+  }
+
+  .heading 
+  {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .card 
+  {
+    width: 80%;
+  }
+
+  .cardbloquedos 
+  {
+
+    width: 100%;
+  }
+
+  .modal 
+  {
+
+    width: 100%;
+  }
+
+  iframe
+  {
+  	
+  	align-items: center;
+	font-size: 12px;
+    width: 80%;
+  }
+ 
+  .footer 
+  {
+
+    width: 60%;
+  }
+
+  .footer p
+  {
+  	text-align: center; padding-left: 35%;width: 150%;
+  }
+  
+  .container-card-boton
+  {
+
+  	display: flex;
+	flex-direction: row;
+	flex-flow: wrap;
+	width: 80%;
+	text-align: center;
+	
+  }
+
+  
+
+  .btn_info
+  {
+
+  	text-align: center;
+  	width: 300px;
+
+  }
+
+  .btn_modal
+  {
+    margin-top: 10%;
+  	width: 300px;
+  }
+
+
+
+}

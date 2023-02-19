@@ -1,0 +1,152 @@
+
+/* Estilos para modal */
+
+.row 
+{
+  padding-left: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  padding-left: 12%;
+  /*background: blue;*/
+}
+
+.modal{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show{
+
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.modal__container{
+    margin: auto;
+    width: 500px;
+    height: 90%;
+    max-width: 1100px;
+    max-height: 150%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 1em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+.modal__title{
+    font-size: 2.5rem;
+}
+
+.modal__paragraph{
+    margin-bottom: 10px;
+}
+
+.modal__img{
+    width: 90%;
+    max-width: 300px;
+}
+
+.modal__close{
+    text-decoration: none;
+    color: #fff;
+    background-color: #F26250;
+    padding: 1em 3em;
+    border: 1px solid ;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.modal__close:hover{
+    color: #F26250;
+    background-color: #fff;
+}
+
+
+/* Estilos para contenido de modal */
+
+
+.cardpaquete {
+  width: 30%;
+  height: 178px;
+  background: #CEF6F5;
+  box-shadow: 1px 1px 5px rgb(201, 201, 201);
+  border: solid rgba(3, 133, 255, 0) 2px;
+  border-radius: 10px;
+  margin: 1px 1px;
+  transition: 0.3s;
+}
+
+.cardmodal{
+    width: 150%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+  
+}
+
+.card_principal{
+    width: 280px;
+    height: 165px;
+    background: #CEF6F5;
+    box-shadow: 1px 1px 5px rgb(201, 201, 201);
+    border: solid rgba(3, 133, 255, 0) 2px;
+    border-radius: 10px;
+}
+.card_principal:hover{
+    border: solid rgb(3, 133, 255) 2px;
+}
+
+
+.card_principal i
+{
+
+
+  margin-top: 10%;
+  background: white;
+  color: black;
+  align-items: left;
+  font-size: 12%;
+}
+
+
+.card__button{
+    text-align: center;
+    margin-top: 5%;
+
+}
+.enlace{
+    margin-top: 10%;
+    width: 40%;
+    height: 12px;
+    background: rgb(0, 110, 255);
+    padding: 8px 20px;
+    color: white;
+    border-radius: 16%;
+    text-decoration: none;
+}
+
+
